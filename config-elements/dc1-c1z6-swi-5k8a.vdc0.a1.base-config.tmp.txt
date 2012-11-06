@@ -1,0 +1,50 @@
+  
+   config t
+  hostname dc1-c1z6-swi-5k8a
+
+feature telnet
+cfs eth distribute
+feature interface-vlan
+feature lacp
+feature vpc
+feature fex
+  
+  username eplus role network-admin password 1Cisco123
+  ip domain-lookup
+  system jumbomtu 9000
+  cli alias name wri copy run start 
+  cli alias name wr copy run start
+  cli alias name swt switchto vdc
+  line console
+  line vty
+  logging logfile LOG-FILE 7 size 64000
+  logging server 1.1.1.1 5 use-vrf management
+  logging server 1.1.1.1 5 use-vrf management
+  logging server 1.1.1.1 5 use-vrf management
+  logging timestamp microseconds
+  logging level local7 6
+
+snmp-server community readonly ro
+snmp-server community readwrite rw
+snmp-server host 1.1.1.1 password
+snmp-server host 1.1.1.1 traps password
+snmp-server host 1.1.1.1 source-interface mgmt 0
+snmp-server host 1.1.1.1 use-vrf management 
+
+snmp-server enable traps feature-control FeatureOpStatusChange
+snmp-server enable traps rmon risingAlarm
+snmp-server enable traps rmon fallingAlarm
+snmp-server enable traps rmon hcRisingAlarm
+snmp-server enable traps rmon hcFallingAlarm
+snmp-server enable traps config ccmCLIRunningConfigChanged
+snmp-server enable traps snmp authentication
+
+
+policy-map type network-qos jumbo
+class type network-qos class-default
+mtu 9000
+system qos
+service-policy type network-qos jumbo
+
+
+  

@@ -1,0 +1,107 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		9D0A743F13174C440073ABA6 /* skynet.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = skynet.sh; path = ../skynet.sh; sourceTree = SOURCE_ROOT; };
+		9D0A744113174C440073ABA6 /* ifup.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; name = ifup.exp; path = ../ifup.exp; sourceTree = SOURCE_ROOT; };
+		9D0A744213174C440073ABA6 /* ifdown.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; name = ifdown.exp; path = ../ifdown.exp; sourceTree = SOURCE_ROOT; };
+		9D0A744313174C440073ABA6 /* nexus-configurator.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "nexus-configurator.sh"; path = "../nexus-configurator.sh"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		9D0A74241317499F0073ABA6 = {
+			isa = PBXGroup;
+			children = (
+				9D0A744613174C590073ABA6 /* config-output */,
+				9D0A750113174C590073ABA6 /* tmp */,
+				9D0A750613174C590073ABA6 /* config-elements */,
+				9D0A743F13174C440073ABA6 /* skynet.sh */,
+				9D0A744113174C440073ABA6 /* ifup.exp */,
+				9D0A744213174C440073ABA6 /* ifdown.exp */,
+				9D0A744313174C440073ABA6 /* nexus-configurator.sh */,
+			);
+			sourceTree = "<group>";
+		};
+		9D0A744613174C590073ABA6 /* config-output */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "config-output";
+			path = "../config-output";
+			sourceTree = SOURCE_ROOT;
+		};
+		9D0A750113174C590073ABA6 /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = tmp;
+			path = ../tmp;
+			sourceTree = SOURCE_ROOT;
+		};
+		9D0A750613174C590073ABA6 /* config-elements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "config-elements";
+			path = "../config-elements";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		9D0A74261317499F0073ABA6 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9D0A74291317499F0073ABA6 /* Build configuration list for PBXProject "Untitled" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 9D0A74241317499F0073ABA6;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		9D0A74271317499F0073ABA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		9D0A74281317499F0073ABA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D0A74291317499F0073ABA6 /* Build configuration list for PBXProject "Untitled" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D0A74271317499F0073ABA6 /* Debug */,
+				9D0A74281317499F0073ABA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D0A74261317499F0073ABA6 /* Project object */;
+}

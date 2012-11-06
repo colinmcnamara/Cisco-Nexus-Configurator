@@ -1,0 +1,382 @@
+  
+   config t
+  hostname dc1-c1z6-swi-5k13a
+
+feature telnet
+cfs eth distribute
+feature interface-vlan
+feature lacp
+feature vpc
+feature fex
+  
+  username eplus role network-admin password 1Cisco123
+  ip domain-lookup
+  system jumbomtu 9000
+  cli alias name wri copy run start 
+  cli alias name wr copy run start
+  cli alias name swt switchto vdc
+  line console
+  line vty
+  logging logfile LOG-FILE 7 size 64000
+  logging server 1.1.1.1 5 use-vrf management
+  logging server 1.1.1.1 5 use-vrf management
+  logging server 1.1.1.1 5 use-vrf management
+  logging timestamp microseconds
+  logging level local7 6
+
+snmp-server community readonly ro
+snmp-server community readwrite rw
+snmp-server host 1.1.1.1 password
+snmp-server host 1.1.1.1 traps password
+snmp-server host 1.1.1.1 source-interface mgmt 0
+snmp-server host 1.1.1.1 use-vrf management 
+
+snmp-server enable traps feature-control FeatureOpStatusChange
+snmp-server enable traps rmon risingAlarm
+snmp-server enable traps rmon fallingAlarm
+snmp-server enable traps rmon hcRisingAlarm
+snmp-server enable traps rmon hcFallingAlarm
+snmp-server enable traps config ccmCLIRunningConfigChanged
+snmp-server enable traps snmp authentication
+
+
+policy-map type network-qos jumbo
+class type network-qos class-default
+mtu 9000
+system qos
+service-policy type network-qos jumbo
+
+
+  
+
+  fex 101
+  description 5k13a-101-c1z6-
+  
+
+  fex 102
+  description 5k13a-102-c1z6-
+  
+
+  fex 103
+  description 5k13a-103-c1z6-
+  
+
+  fex 104
+  description 5k13a-104-c1z6-
+  
+
+  fex 105
+  description 5k13a-105-c1z6-
+  
+
+  fex 106
+  description 5k13a-106-c1z6-
+  
+
+  fex 107
+  description 5k13a-107-c1z6-
+  
+
+  fex 108
+  description 5k13a-108-c1z6-
+  
+
+  interface po101
+  description 5k13a-101-c1z6-   
+  switchport mode fex-fabric
+  vpc 101
+  fex associate 101
+  no shutdown
+
+  interface po102
+  description 5k13a-102-c1z6-   
+  switchport mode fex-fabric
+  vpc 102
+  fex associate 102
+  no shutdown
+
+  interface po101
+  description 5k13a-103-c1z6-   
+  switchport mode fex-fabric
+  vpc 103
+  fex associate 103
+  no shutdown
+
+  interface po104
+  description 5k13a-104-c1z6-   
+  switchport mode fex-fabric
+  vpc 104
+  fex associate 104
+  no shutdown
+
+  interface po101
+  description 5k13a-105-c1z6-   
+  switchport mode fex-fabric
+  vpc 105
+  fex associate 105
+  no shutdown
+
+  interface po106
+  description 5k13a-106-c1z6-   
+  switchport mode fex-fabric
+  vpc 106
+  fex associate 106
+  no shutdown
+
+  interface po101
+  description 5k13a-107-c1z6-   
+  switchport mode fex-fabric
+  vpc 107
+  fex associate 107
+  no shutdown
+
+  interface po108
+  description 5k13a-108-c1z6-   
+  switchport mode fex-fabric
+  vpc 108
+  fex associate 108
+  no shutdown
+
+  interface po1
+  description dc1-c1z6-swi-5k13ab po1 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  switchport trunk allowed vlan remove 2
+  spanning-tree port type network
+  vpc peer-link
+  no shutdown
+
+  interface po3
+  description dc1-c1z6-rtr-1-2   
+  vpc 3
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+
+  no shutdown
+
+  interface vlan2
+  description keepalive interface dc1-c1z6-swi-5k13ab vlan2 
+  ip address 169.254.1.1/24 
+  no shutdown
+
+  interface mgmt0
+  ip address 1.1.1.1/23
+  description management interface for dc1-c1z6-swi-5k13a
+  no shutdown
+
+  vrf context management
+  ip route 0.0.0.0/0 1.1.1.1 
+
+  feature vpc
+  spanning-tree mode rapid-pvst
+  spanning-tree vlan 1-3967,4048-4093 priority 0
+  vlan 2
+  name peerkeepalive
+
+  
+  vpc domain 2
+  role priority 3000
+  peer-keepalive destination 169.254.1.2 source 169.254.1.1 vrf default
+  
+
+  interface E2/12
+  description dc1-c1z6-swi-5k13ab E2/12 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  switchport trunk allowed vlan remove 2
+  channel-group 1 mode active
+  no shutdown
+
+  interface E2/13
+  description dc1-c1z6-swi-5k13ab E2/13 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  switchport trunk allowed vlan remove 2
+  channel-group 1 mode active
+  no shutdown
+
+  interface E2/14
+  description dc1-c1z6-swi-5k13ab E2/14 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  switchport trunk allowed vlan remove 2
+  channel-group 1 mode active
+  no shutdown
+
+  interface E2/15
+  description dc1-c1z6-swi-5k13ab E2/15 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  switchport trunk allowed vlan remove 2
+  channel-group 1 mode active
+  no shutdown
+
+  interface E2/1
+  description dc1-c1z6-rtr-1 E7/25 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  channel-group 3 mode active
+  no shutdown
+
+  interface E2/2
+  description dc1-c1z6-rtr-1 E7/26 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  channel-group 3 mode active
+  no shutdown
+
+  interface E2/3
+  description dc1-c1z6-rtr-2 E7/25 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  channel-group 3 mode active
+  no shutdown
+
+  interface E2/4
+  description dc1-c1z6-rtr-2 E7/26 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  channel-group 3 mode active
+  no shutdown
+
+  interface e1/1
+  description 5k13a-101-c1z6- 1 
+  fex associate 101
+  switchport mode fex-fabric
+  channel-group 101 
+  no shutdown
+
+  interface e1/2
+  description 5k13a-101-c1z6- 2 
+  fex associate 101
+  switchport mode fex-fabric
+  channel-group 101 
+  no shutdown
+
+  interface e1/3
+  description 5k13a-102-c1z6- 1 
+  fex associate 102
+  switchport mode fex-fabric
+  channel-group 102 
+  no shutdown
+
+  interface e1/4
+  description 5k13a-102-c1z6- 2 
+  fex associate 102
+  switchport mode fex-fabric
+  channel-group 102 
+  no shutdown
+
+  interface E1/5
+  description 5k13a-103-c1z6- 1 
+  fex associate 103
+  switchport mode fex-fabric
+  channel-group 103 
+  no shutdown
+
+  interface E1/6
+  description 5k13a-103-c1z6- 2 
+  fex associate 103
+  switchport mode fex-fabric
+  channel-group 103 
+  no shutdown
+
+  interface E1/7
+  description 5k13a-104-c1z6- 1 
+  fex associate 104
+  switchport mode fex-fabric
+  channel-group 104 
+  no shutdown
+
+  interface E1/8
+  description 5k13a-104-c1z6- 2 
+  fex associate 104
+  switchport mode fex-fabric
+  channel-group 104 
+  no shutdown
+
+  interface E1/9
+  description 5k13a-105-c1z6- 1 
+  fex associate 105
+  switchport mode fex-fabric
+  channel-group 105 
+  no shutdown
+
+  interface E1/10
+  description 5k13a-105-c1z6- 2 
+  fex associate 105
+  switchport mode fex-fabric
+  channel-group 105 
+  no shutdown
+
+  interface E1/11
+  description 5k13a-106-c1z6- 1 
+  fex associate 106
+  switchport mode fex-fabric
+  channel-group 106 
+  no shutdown
+
+  interface E1/12
+  description 5k13a-106-c1z6- 2 
+  fex associate 106
+  switchport mode fex-fabric
+  channel-group 106 
+  no shutdown
+
+  interface E1/13
+  description 5k13a-107-c1z6- 1 
+  fex associate 107
+  switchport mode fex-fabric
+  channel-group 107 
+  no shutdown
+
+  interface E1/14
+  description 5k13a-107-c1z6- 2 
+  fex associate 107
+  switchport mode fex-fabric
+  channel-group 107 
+  no shutdown
+
+  interface E1/15
+  description 5k13a-108-c1z6- 1 
+  fex associate 108
+  switchport mode fex-fabric
+  channel-group 108 
+  no shutdown
+
+  interface E1/16
+  description 5k13a-108-c1z6- 2 
+  fex associate 108
+  switchport mode fex-fabric
+  channel-group 108 
+  no shutdown
+
+  interface E2/16
+  description keepalive member interface dc1-c1z6-swi-5k13ab E2/16 
+  switchport access vlan 2
+  no shutdown

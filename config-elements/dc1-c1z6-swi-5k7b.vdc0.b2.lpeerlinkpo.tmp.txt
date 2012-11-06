@@ -1,0 +1,10 @@
+
+  interface po1
+  description dc1-c1z6-swi-5k7ba po1 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  switchport trunk allowed vlan remove 2
+  spanning-tree port type network
+  vpc peer-link
+  no shutdown

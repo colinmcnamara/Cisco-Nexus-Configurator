@@ -1,0 +1,44 @@
+
+  interface E2/1
+  description dc1-c1z6-rtr-1 E8/19 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  channel-group 3 mode active
+  no shutdown
+
+  interface E2/2
+  description dc1-c1z6-rtr-1 E8/20 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  channel-group 3 mode active
+  no shutdown
+
+  interface E2/3
+  description dc1-c1z6-rtr-2 E8/19 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  channel-group 3 mode active
+  no shutdown
+
+  interface E2/4
+  description dc1-c1z6-rtr-2 E8/20 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  channel-group 3 mode active
+  no shutdown

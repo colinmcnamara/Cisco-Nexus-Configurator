@@ -1,0 +1,36 @@
+
+  interface E2/12
+  description dc1-c1z6-swi-5k4ba E2/12 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  switchport trunk allowed vlan remove 2
+  channel-group 1 mode active
+  no shutdown
+
+  interface E2/13
+  description dc1-c1z6-swi-5k4ba E2/13 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  switchport trunk allowed vlan remove 2
+  channel-group 1 mode active
+  no shutdown
+
+  interface E2/14
+  description dc1-c1z6-swi-5k4ba E2/14 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  switchport trunk allowed vlan remove 2
+  channel-group 1 mode active
+  no shutdown
+
+  interface E2/15
+  description dc1-c1z6-swi-5k4ba E2/15 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  switchport trunk allowed vlan remove 2
+  channel-group 1 mode active
+  no shutdown

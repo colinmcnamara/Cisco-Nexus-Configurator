@@ -1,0 +1,5 @@
+
+  interface E2/16
+  description keepalive member interface dc1-c1z6-swi-5k14ab E2/16 
+  switchport access vlan 2
+  no shutdown

@@ -1,0 +1,11 @@
+
+  feature vpc
+  spanning-tree mode rapid-pvst
+  spanning-tree vlan 1-3967,4048-4093 priority 4096 
+  vlan 2
+  name peerkeepalive
+  
+  vpc domain 2
+  role priority 6000
+  peer-keepalive destination 169.254.1.1 source 169.254.1.2 vrf default
+  

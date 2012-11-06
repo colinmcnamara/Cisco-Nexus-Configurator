@@ -1,0 +1,50 @@
+#!/usr/bin/expect -f
+#
+
+set force_conservative 0 ;# set to 1 to force conservative mode even if
+;# script wasn't run conservatively originally
+if {$force_conservative} {
+set send_slow {1 .1}
+proc send {ignore arg} {
+sleep .1
+exp_send -s -- $arg
+}
+}
+
+
+# usage to shut down e2/3 on 10.7.255.135 with the username colin and password 1Cisco123
+#
+# ./ifdown.exp colin 1Cisco123 10.7.255.135 e2/3
+# -Colin
+
+set username [lrange $argv 0 0]
+set password [lrange $argv 1 1]
+set ipaddr [lrange $argv 2 2]
+set interfaceid [lrange $argv 3 3]
+set timeout -1
+
+set timeout -1
+spawn $env(SHELL)
+match_max 100000
+expect "bash-* "
+send -- "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -l $username $ipaddr"
+expect "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -l $username $ipaddr"
+send -- "\r"
+expect "User Access Verification\r
+Password: "
+send -- "$password\r"
+expect "# "
+send -- "config t\r"
+expect "(config)# "
+send -- "int $interfaceid\r"
+expect "(config-if)# "
+send -- "shut\r"
+expect "(config-if)# "
+send -- "end\r"
+expect "# "
+send -- "exit\r"
+expect "exit\r\r
+Connection to * closed.\r\r
+bash* "
+send -- "exit\r"
+expect eof

@@ -1,0 +1,56 @@
+
+  interface po101
+  description 5k4a-101-c1z6-   
+  switchport mode fex-fabric
+  vpc 101
+  fex associate 101
+  no shutdown
+
+  interface po102
+  description 5k4a-102-c1z6-   
+  switchport mode fex-fabric
+  vpc 102
+  fex associate 102
+  no shutdown
+
+  interface po101
+  description 5k4a-103-c1z6-   
+  switchport mode fex-fabric
+  vpc 103
+  fex associate 103
+  no shutdown
+
+  interface po104
+  description 5k4a-104-c1z6-   
+  switchport mode fex-fabric
+  vpc 104
+  fex associate 104
+  no shutdown
+
+  interface po101
+  description 5k4a-105-c1z6-   
+  switchport mode fex-fabric
+  vpc 105
+  fex associate 105
+  no shutdown
+
+  interface po106
+  description 5k4a-106-c1z6-   
+  switchport mode fex-fabric
+  vpc 106
+  fex associate 106
+  no shutdown
+
+  interface po101
+  description 5k4a-107-c1z6-   
+  switchport mode fex-fabric
+  vpc 107
+  fex associate 107
+  no shutdown
+
+  interface po108
+  description 5k4a-108-c1z6-   
+  switchport mode fex-fabric
+  vpc 108
+  fex associate 108
+  no shutdown

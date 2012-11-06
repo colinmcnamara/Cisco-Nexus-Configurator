@@ -1,0 +1,112 @@
+
+  interface e1/1
+  description 5k14b-101-c1z6- 3 
+  fex associate 101
+  switchport mode fex-fabric
+  channel-group 101 
+  no shutdown
+
+  interface e1/2
+  description 5k14b-101-c1z6- 4 
+  fex associate 101
+  switchport mode fex-fabric
+  channel-group 101 
+  no shutdown
+
+  interface e1/3
+  description 5k14b-102-c1z6- 3 
+  fex associate 102
+  switchport mode fex-fabric
+  channel-group 102 
+  no shutdown
+
+  interface e1/4
+  description 5k14b-102-c1z6- 4 
+  fex associate 102
+  switchport mode fex-fabric
+  channel-group 102 
+  no shutdown
+
+  interface e1/1
+  description 5k14b-103-c1z6- 3 
+  fex associate 103
+  switchport mode fex-fabric
+  channel-group 103 
+  no shutdown
+
+  interface e1/2
+  description 5k14b-103-c1z6- 4 
+  fex associate 103
+  switchport mode fex-fabric
+  channel-group 103 
+  no shutdown
+
+  interface e1/3
+  description 5k14b-104-c1z6- 3 
+  fex associate 104
+  switchport mode fex-fabric
+  channel-group 104 
+  no shutdown
+
+  interface e1/4
+  description 5k14b-104-c1z6- 4 
+  fex associate 104
+  switchport mode fex-fabric
+  channel-group 104 
+  no shutdown
+
+  interface e1/1
+  description 5k14b-105-c1z6- 3 
+  fex associate 105
+  switchport mode fex-fabric
+  channel-group 105 
+  no shutdown
+
+  interface e1/2
+  description 5k14b-105-c1z6- 4 
+  fex associate 105
+  switchport mode fex-fabric
+  channel-group 105 
+  no shutdown
+
+  interface e1/3
+  description 5k14b-106-c1z6- 3 
+  fex associate 106
+  switchport mode fex-fabric
+  channel-group 106 
+  no shutdown
+
+  interface e1/4
+  description 5k14b-106-c1z6- 4 
+  fex associate 106
+  switchport mode fex-fabric
+  channel-group 106 
+  no shutdown
+
+  interface e1/1
+  description 5k14b-107-c1z6- 3 
+  fex associate 107
+  switchport mode fex-fabric
+  channel-group 107 
+  no shutdown
+
+  interface e1/2
+  description 5k14b-107-c1z6- 4 
+  fex associate 107
+  switchport mode fex-fabric
+  channel-group 107 
+  no shutdown
+
+  interface e1/3
+  description 5k14b-108-c1z6- 3 
+  fex associate 108
+  switchport mode fex-fabric
+  channel-group 108 
+  no shutdown
+
+  interface e1/4
+  description 5k14b-108-c1z6- 4 
+  fex associate 108
+  switchport mode fex-fabric
+  channel-group 108 
+  no shutdown

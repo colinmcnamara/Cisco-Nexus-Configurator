@@ -1,0 +1,96 @@
+// !$*UTF8*$!
+{
+	9D0A74251317499F0073ABA6 /* PBXBookmarkGroup */ = {
+		isa = PBXBookmarkGroup;
+		children = (
+			9D0A7ED51317521C0073ABA6 /* PBXBookmark */,
+		);
+		name = Root;
+	};
+	9D0A74261317499F0073ABA6 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		addToTargets = (
+		);
+		codeSenseManager = 9D0A742B1317499F0073ABA6 /* Code sense */;
+		ignoreBreakpointsInProjectsDict = {
+		};
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 322434729;
+			PBXWorkspaceStateSaveDate = 322434729;
+		};
+		sourceControlManager = 9D0A742A1317499F0073ABA6 /* Source Control */;
+		userBookmarkGroup = 9D0A74251317499F0073ABA6 /* PBXBookmarkGroup */;
+		userBuildSettings = {
+		};
+	};
+	9D0A742A1317499F0073ABA6 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	9D0A742B1317499F0073ABA6 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	9D0A743F13174C440073ABA6 /* skynet.sh */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2693, 1586}}";
+			sepNavSelRange = "{1185, 0}";
+			sepNavVisRange = "{1049, 2589}";
+		};
+	};
+	9D0A744113174C440073ABA6 /* ifup.exp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1341, 782}}";
+			sepNavSelRange = "{249, 0}";
+			sepNavVisRange = "{0, 1155}";
+		};
+	};
+	9D0A744213174C440073ABA6 /* ifdown.exp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1341, 782}}";
+			sepNavSelRange = "{399, 0}";
+			sepNavVisRange = "{0, 1154}";
+			sepNavWindowFrame = "{{15, 56}, {1443, 971}}";
+		};
+	};
+	9D0A744313174C440073ABA6 /* nexus-configurator.sh */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2693, 12259}}";
+			sepNavSelRange = "{24809, 24}";
+			sepNavVisRange = "{23878, 1647}";
+			sepNavWindowFrame = "{{15, 56}, {1443, 971}}";
+		};
+	};
+	9D0A7ED51317521C0073ABA6 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 9D0A743F13174C440073ABA6 /* skynet.sh */;
+	};
+}

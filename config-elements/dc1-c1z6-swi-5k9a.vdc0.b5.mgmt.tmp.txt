@@ -1,0 +1,5 @@
+
+  interface mgmt0
+  ip address 1.1.1.1/23
+  description management interface for dc1-c1z6-swi-5k9a
+  no shutdown

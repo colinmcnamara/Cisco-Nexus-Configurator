@@ -1,0 +1,5 @@
+
+  interface vlan2
+  description keepalive interface dc1-c1z6-swi-5k7ab vlan2 
+  ip address 169.254.1.1/24 
+  no shutdown

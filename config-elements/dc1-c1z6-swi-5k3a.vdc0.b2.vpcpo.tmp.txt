@@ -1,0 +1,12 @@
+
+  interface po3
+  description dc1-c1z6-rtr-1-2   
+  vpc 3
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+
+  no shutdown

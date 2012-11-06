@@ -1,0 +1,728 @@
+
+  interface E7/1
+  description dc1-c1z6-swi-5k1a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 11 mode active
+  no shutdown
+
+  interface E7/2
+  description dc1-c1z6-swi-5k1a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 11 mode active
+  no shutdown
+
+  interface E8/1
+  description dc1-c1z6-swi-5k1b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 11 mode active
+  no shutdown
+
+  interface E8/2
+  description dc1-c1z6-swi-5k1b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 11 mode active
+  no shutdown
+
+  interface E7/3
+  description dc1-c1z6-swi-5k2a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 12 mode active
+  no shutdown
+
+  interface E7/4
+  description dc1-c1z6-swi-5k2a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 12 mode active
+  no shutdown
+
+  interface E8/3
+  description dc1-c1z6-swi-5k2b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 12 mode active
+  no shutdown
+
+  interface E8/4
+  description dc1-c1z6-swi-5k2b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 12 mode active
+  no shutdown
+
+  interface e7/5
+  description dc1-c1z6-swi-5k3a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 13 mode active
+  no shutdown
+
+  interface e7/6
+  description dc1-c1z6-swi-5k3a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 13 mode active
+  no shutdown
+
+  interface e8/5
+  description dc1-c1z6-swi-5k3b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 13 mode active
+  no shutdown
+
+  interface e8/6
+  description dc1-c1z6-swi-5k3b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 13 mode active
+  no shutdown
+
+  interface E7/7
+  description dc1-c1z6-swi-5k4a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 14 mode active
+  no shutdown
+
+  interface E7/8
+  description dc1-c1z6-swi-5k4a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 14 mode active
+  no shutdown
+
+  interface E8/7
+  description dc1-c1z6-swi-5k4b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 14 mode active
+  no shutdown
+
+  interface E8/8
+  description dc1-c1z6-swi-5k4b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 14 mode active
+  no shutdown
+
+  interface E7/9
+  description dc1-c1z6-swi-5k5a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 15 mode active
+  no shutdown
+
+  interface E7/10
+  description dc1-c1z6-swi-5k5a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 15 mode active
+  no shutdown
+
+  interface E8/9
+  description dc1-c1z6-swi-5k5b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 15 mode active
+  no shutdown
+
+  interface E8/10
+  description dc1-c1z6-swi-5k5b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 15 mode active
+  no shutdown
+
+  interface E7/11
+  description dc1-c1z6-swi-5k6a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 16 mode active
+  no shutdown
+
+  interface E7/12
+  description dc1-c1z6-swi-5k6a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 16 mode active
+  no shutdown
+
+  interface E8/11
+  description dc1-c1z6-swi-5k6b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 16 mode active
+  no shutdown
+
+  interface E8/12
+  description dc1-c1z6-swi-5k6b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 16 mode active
+  no shutdown
+
+  interface E7/13
+  description dc1-c1z6-swi-5k7a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 17 mode active
+  no shutdown
+
+  interface E7/14
+  description dc1-c1z6-swi-5k7a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 17 mode active
+  no shutdown
+
+  interface E8/13
+  description dc1-c1z6-swi-5k7b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 17 mode active
+  no shutdown
+
+  interface E8/14
+  description dc1-c1z6-swi-5k7b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 17 mode active
+  no shutdown
+
+  interface E7/15
+  description dc1-c1z6-swi-5k8a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 18 mode active
+  no shutdown
+
+  interface E7/16
+  description dc1-c1z6-swi-5k8a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 18 mode active
+  no shutdown
+
+  interface E8/15
+  description dc1-c1z6-swi-5k8b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 18 mode active
+  no shutdown
+
+  interface E8/16
+  description dc1-c1z6-swi-5k8b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 18 mode active
+  no shutdown
+
+  interface E7/17
+  description dc1-c1z6-swi-5k9a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 19 mode active
+  no shutdown
+
+  interface E7/18
+  description dc1-c1z6-swi-5k9a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 19 mode active
+  no shutdown
+
+  interface E8/17
+  description dc1-c1z6-swi-5k9b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 19 mode active
+  no shutdown
+
+  interface E8/18
+  description dc1-c1z6-swi-5k9b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 19 mode active
+  no shutdown
+
+  interface E7/19
+  description dc1-c1z6-swi-5k10a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 20 mode active
+  no shutdown
+
+  interface E7/20
+  description dc1-c1z6-swi-5k10a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 20 mode active
+  no shutdown
+
+  interface E8/19
+  description dc1-c1z6-swi-5k10b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 20 mode active
+  no shutdown
+
+  interface E8/20
+  description dc1-c1z6-swi-5k10b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 20 mode active
+  no shutdown
+
+  interface E7/21
+  description dc1-c1z6-swi-5k11a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 21 mode active
+  no shutdown
+
+  interface E7/22
+  description dc1-c1z6-swi-5k11a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 21 mode active
+  no shutdown
+
+  interface E8/21
+  description dc1-c1z6-swi-5k11b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 21 mode active
+  no shutdown
+
+  interface E8/22
+  description dc1-c1z6-swi-5k11b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 21 mode active
+  no shutdown
+
+  interface E7/23
+  description dc1-c1z6-swi-5k12a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 22 mode active
+  no shutdown
+
+  interface E7/24
+  description dc1-c1z6-swi-5k12a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 22 mode active
+  no shutdown
+
+  interface E8/23
+  description dc1-c1z6-swi-5k12b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 22 mode active
+  no shutdown
+
+  interface E8/24
+  description dc1-c1z6-swi-5k12b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 22 mode active
+  no shutdown
+
+  interface E7/25
+  description dc1-c1z6-swi-5k13a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 23 mode active
+  no shutdown
+
+  interface E7/26
+  description dc1-c1z6-swi-5k13a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 23 mode active
+  no shutdown
+
+  interface E8/25
+  description dc1-c1z6-swi-5k13b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 23 mode active
+  no shutdown
+
+  interface E8/26
+  description dc1-c1z6-swi-5k13b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 23 mode active
+  no shutdown
+
+  interface E7/26
+  description dc1-c1z6-swi-5k14a e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 24 mode active
+  no shutdown
+
+  interface E7/27
+  description dc1-c1z6-swi-5k14a e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 24 mode active
+  no shutdown
+
+  interface E8/26
+  description dc1-c1z6-swi-5k14b e2/1 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 24 mode active
+  no shutdown
+
+  interface E8/27
+  description dc1-c1z6-swi-5k14b e2/2 
+  switchport
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  channel-group 24 mode active
+  no shutdown

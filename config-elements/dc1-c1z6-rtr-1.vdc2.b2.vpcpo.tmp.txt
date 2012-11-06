@@ -1,0 +1,182 @@
+
+  interface po11
+  description dc1-c1z6-swi-5k1a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 11
+  no shutdown
+
+  interface po12
+  description dc1-c1z6-swi-5k2a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 12
+  no shutdown
+
+  interface po13
+  description dc1-c1z6-swi-5k3a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 13
+  no shutdown
+
+  interface po14
+  description dc1-c1z6-swi-5k4a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 14
+  no shutdown
+
+  interface po15
+  description dc1-c1z6-swi-5k5a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 15
+  no shutdown
+
+  interface po16
+  description dc1-c1z6-swi-5k6a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 16
+  no shutdown
+
+  interface po17
+  description dc1-c1z6-swi-5k7a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 17
+  no shutdown
+
+  interface po18
+  description dc1-c1z6-swi-5k8a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 18
+  no shutdown
+
+  interface po19
+  description dc1-c1z6-swi-5k9a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 19
+  no shutdown
+
+  interface po20
+  description dc1-c1z6-swi-5k10a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 20
+  no shutdown
+
+  interface po21
+  description dc1-c1z6-swi-5k11a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 21
+  no shutdown
+
+  interface po22
+  description dc1-c1z6-swi-5k12a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 22
+  no shutdown
+
+  interface po23
+  description dc1-c1z6-swi-5k13a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 23
+  no shutdown
+
+  interface po24
+  description dc1-c1z6-swi-5k14a-b  
+  switchport 
+  switchport mode trunk
+  switchport trunk native vlan 999
+  switchport trunk allowed vlan 1-4093
+  
+  switchport trunk allowed vlan remove 2
+  
+  mtu 9000
+  vpc 24
+  no shutdown
